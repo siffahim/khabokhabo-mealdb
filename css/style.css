@@ -1,0 +1,20 @@
+ body {
+     font-family: 'Jost', sans-serif;
+     position: relative;
+ }
+
+ .search-banner {
+     width: 100%;
+     height: 510px;
+     background-image: url("../icons/bannerbackground.png");
+     background-size: cover;
+     background-position: center;
+ }
+
+ .loader {
+     position: fixed;
+     top: 0;
+     left: 0;
+     height: 3px;
+     z-index: 999;
+ }

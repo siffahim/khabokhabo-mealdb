@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icons/favicon.png" type="image/x-icon">
+    <title>Khabo Khabo</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!------------Tailwind Cdn link----------->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!------------Google fonts cnd -------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-[#fcf4e0]">
+    <div class="loader bg-green-500"></div>
+    <main>
+        <section class="search-banner flex items-start justify-center pt-7 text-center">
+            <div>
+                <h2 class="text-5xl  font-semibold text-yellow-500 mb-1">khabo khabo!!!</h2>
+                <h2 class="text-3xl  font-semibold text-gray-500 mb-8">Let's search your favorite <span
+                        class="text-yellow-400">fooood!!!</span></h2>
+                <input type="text"
+                    class="border w-3/4 py-2 px-2 text-yellow-500 rounded outline-none focus:border-yellow-500" name=""
+                    id="search-field" placeholder="Search food name">
+                <button onclick="searchFood()" id="search-btn"
+                    class="bg-green-500 text-white py-2 px-4 rounded uppercase hover:bg-green-600">Search</button>
+            </div>
+        </section>
+
+        <p class="text-3xl font-semibold text-red-400 text-center -mt-44" id="error-message">Result not found</p>
+
+        <section id="search-result" class="mt-[-270px] grid grid-cols-4 gap-2 px-28 pb-10">
+            <!--------
+                Search Result Show here
+                ------->
+
+        </section>
+        <section id="search-food-detail" class="px-28 mt-[-60px] pb-10">
+            <!--------
+                Search Result food detail here
+                ------->
+        </section>
+    </main>
+    <footer class="text-center text-gray-400">
+        <p>Copyright &copy; All files Reserved By Me</p>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
